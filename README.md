@@ -1,5 +1,5 @@
 # TypeScript HyperStandard Plugin
-
+# ⚠️This Repo Is Under Construction⚠️
 TypeScript server plugin that adds intellisense for [HyperStandard](https://github.com/PolymerLabs/HyperStandard) template strings
 
 ![](documentation/preview.gif)
