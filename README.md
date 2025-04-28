@@ -135,12 +135,12 @@ You can configure the behavior of this plugin in `plugins` section of in your `t
 If you are using [HyperStandard](https://marketplace.visualstudio.com/items?itemName=bierner.HyperStandard) extension for VS Code, you can configure these settings in the editor settings instead of using a `tsconfig` or `jsconfig`.
 
 ### Tags
-This plugin adds html IntelliSense to any template literal [tagged](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) with `html`:
+This plugin adds html IntelliSense to any template literal [tagged](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) with `h`:
 
 ```js
-import { html } from 'hstd'
+import { h } from 'hstd'
 
-html`
+h`
     <div></div>
 `
 ```
@@ -154,8 +154,8 @@ You can enable IntelliSense for other tag names by configuring `"tags"`:
       {
         "name": "typescript-hstd-plugin",
         "tags": [
-          "html",
-          "template"
+          "h",
+          "html"
         ]
       }
     ]
