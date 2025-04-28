@@ -1,10 +1,10 @@
-# TypeScript lit-html Plugin
+# TypeScript HyperStandard Plugin
 
-TypeScript server plugin that adds intellisense for [lit-html](https://github.com/PolymerLabs/lit-html) template strings
+TypeScript server plugin that adds intellisense for [HyperStandard](https://github.com/PolymerLabs/HyperStandard) template strings
 
 ![](documentation/preview.gif)
 
-[![Build Status](https://travis-ci.org/Microsoft/typescript-lit-html-plugin.svg?branch=master)](https://travis-ci.org/Microsoft/typescript-lit-html-plugin)
+[![Build Status](https://travis-ci.org/Microsoft/typescript-HyperStandard-plugin.svg?branch=master)](https://travis-ci.org/Microsoft/typescript-HyperStandard-plugin)
 
 **Features**
 
@@ -20,12 +20,12 @@ TypeScript server plugin that adds intellisense for [lit-html](https://github.co
 This plugin requires TypeScript 2.4 or later. It can provide intellisense in both JavaScript and TypeScript files within any editor that uses TypeScript to power their language features. This includes [VS Code](https://code.visualstudio.com), [Sublime with the TypeScript plugin](https://github.com/Microsoft/TypeScript-Sublime-Plugin), [Atom with the TypeScript plugin](https://atom.io/packages/atom-typescript), [Visual Studio](https://www.visualstudio.com), and others. 
 
 ### With VS Code
-The simplest way to use this plugin is through the [lit-html](https://marketplace.visualstudio.com/items?itemName=bierner.lit-html) extension. This extension automatically enables the plugin, and also adds syntax highlighting for lit-html template strings and synchronization of settings between VS Code and the plugin.
+The simplest way to use this plugin is through the [HyperStandard](https://marketplace.visualstudio.com/items?itemName=bierner.HyperStandard) extension. This extension automatically enables the plugin, and also adds syntax highlighting for HyperStandard template strings and synchronization of settings between VS Code and the plugin.
 
 To use a specific version of this plugin with VS Code, first install the plugin and a copy of TypeScript in your workspace:
 
 ```bash
-npm install --save-dev typescript-lit-html-plugin typescript
+npm install --save-dev typescript-HyperStandard-plugin typescript
 ```
 
 Then add a `plugins` section to your [`tsconfig.json`](http://www.typescriptlang.org/docs/handbook/tsconfig-json.html) or [`jsconfig.json`](https://code.visualstudio.com/Docs/languages/javascript#_javascript-project-jsconfigjson)
@@ -35,7 +35,7 @@ Then add a `plugins` section to your [`tsconfig.json`](http://www.typescriptlang
   "compilerOptions": {
     "plugins": [
       {
-        "name": "typescript-lit-html-plugin"
+        "name": "typescript-HyperStandard-plugin"
       }
     ]
   }
@@ -51,7 +51,7 @@ This plugin works with the [Sublime TypeScript plugin](https://github.com/Micros
 First install the plugin and a copy of TypeScript in your workspace:
 
 ```bash
-npm install --save-dev typescript-lit-html-plugin typescript
+npm install --save-dev typescript-HyperStandard-plugin typescript
 ```
 
 And configure Sublime to use the workspace version of TypeScript by [setting the `typescript_tsdk`](https://github.com/Microsoft/TypeScript-Sublime-Plugin#note-using-different-versions-of-typescript) setting in Sublime:
@@ -69,7 +69,7 @@ Finally add a `plugins` section to your [`tsconfig.json`](http://www.typescriptl
   "compilerOptions": {
     "plugins": [
       {
-        "name": "typescript-lit-html-plugin"
+        "name": "typescript-HyperStandard-plugin"
       }
     ]
   }
@@ -82,7 +82,7 @@ This plugin works with the [Atom TypeScript plugin](https://atom.io/packages/ato
 First install the plugin and a copy of TypeScript in your workspace:
 
 ```bash
-npm install --save-dev typescript-lit-html-plugin typescript
+npm install --save-dev typescript-HyperStandard-plugin typescript
 ```
 
 Then add a `plugins` section to your [`tsconfig.json`](http://www.typescriptlang.org/docs/handbook/tsconfig-json.html) or [`jsconfig.json`](https://code.visualstudio.com/Docs/languages/javascript#_javascript-project-jsconfigjson) and restart Atom.
@@ -92,14 +92,14 @@ Then add a `plugins` section to your [`tsconfig.json`](http://www.typescriptlang
   "compilerOptions": {
     "plugins": [
       {
-        "name": "typescript-lit-html-plugin"
+        "name": "typescript-HyperStandard-plugin"
       }
     ]
   }
 }
 ```
 
-To get syntax highlighting for lit-html strings in Atom, consider installing the [language-babel](https://atom.io/packages/language-babel) extension.
+To get syntax highlighting for HyperStandard strings in Atom, consider installing the [language-babel](https://atom.io/packages/language-babel) extension.
 
 
 ### With Visual Studio
@@ -108,7 +108,7 @@ This plugin works [Visual Studio 2017 15.8+](https://www.visualstudio.com) using
 First install the plugin in your project:
 
 ```bash
-npm install --save-dev typescript-lit-html-plugin
+npm install --save-dev typescript-HyperStandard-plugin
 ```
 
 Then add a `plugins` section to your [`tsconfig.json`](http://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
@@ -118,7 +118,7 @@ Then add a `plugins` section to your [`tsconfig.json`](http://www.typescriptlang
   "compilerOptions": {
     "plugins": [
       {
-        "name": "typescript-lit-html-plugin"
+        "name": "typescript-HyperStandard-plugin"
       }
     ]
   }
@@ -132,13 +132,13 @@ Then reload your project to make sure the plugin has been loaded properly. Note 
 
 You can configure the behavior of this plugin in `plugins` section of in your `tsconfig` or `jsconfig`.
 
-If you are using [lit-html](https://marketplace.visualstudio.com/items?itemName=bierner.lit-html) extension for VS Code, you can configure these settings in the editor settings instead of using a `tsconfig` or `jsconfig`.
+If you are using [HyperStandard](https://marketplace.visualstudio.com/items?itemName=bierner.HyperStandard) extension for VS Code, you can configure these settings in the editor settings instead of using a `tsconfig` or `jsconfig`.
 
 ### Tags
 This plugin adds html IntelliSense to any template literal [tagged](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) with `html` or `raw`:
 
 ```js
-import {html} from 'lit-html'
+import {html} from 'HyperStandard'
 
 html`
     <div></div>
@@ -152,7 +152,7 @@ You can enable IntelliSense for other tag names by configuring `"tags"`:
   "compilerOptions": {
     "plugins": [
       {
-        "name": "typescript-lit-html-plugin",
+        "name": "typescript-HyperStandard-plugin",
         "tags": [
           "html",
           "template"
@@ -171,7 +171,7 @@ The plugin formats html code by default. You can disable this by setting `"forma
   "compilerOptions": {
     "plugins": [
       {
-        "name": "typescript-lit-html-plugin",
+        "name": "typescript-HyperStandard-plugin",
         "format": { "enabled": false }
       }
     ]
@@ -182,13 +182,13 @@ The plugin formats html code by default. You can disable this by setting `"forma
 
 ## Contributing
 
-To build the typescript-lit-html-plugin, you'll need [Git](https://git-scm.com/downloads) and [Node.js](https://nodejs.org/).
+To build the typescript-HyperStandard-plugin, you'll need [Git](https://git-scm.com/downloads) and [Node.js](https://nodejs.org/).
 
-First, [fork](https://help.github.com/articles/fork-a-repo/) the typescript-lit-html-plugin repo and clone your fork:
+First, [fork](https://help.github.com/articles/fork-a-repo/) the typescript-HyperStandard-plugin repo and clone your fork:
 
 ```bash
-git clone https://github.com/YOUR_GITHUB_ACCOUNT_NAME/typescript-lit-html-plugin.git
-cd typescript-lit-html-plugin
+git clone https://github.com/YOUR_GITHUB_ACCOUNT_NAME/typescript-HyperStandard-plugin.git
+cd typescript-HyperStandard-plugin
 ```
 
 Then install dev dependencies:
@@ -228,6 +228,6 @@ git push origin my-awesome-new-feature-branch
 ```
 
 Then [submit a pull request](https://help.github.com/articles/creating-a-pull-request/
-) against the Microsoft typescript-lit-html-plugin repository.
+) against the Microsoft typescript-HyperStandard-plugin repository.
 
 Please also see our [Code of Conduct](CODE_OF_CONDUCT.md).
